@@ -1,51 +1,52 @@
 const auto=[
     {
-      marca: Audi,
-      modello:tt,
-      alimentazione:benzina,
+      marca: "Audi",
+      modello:"tt",
+      alimentazione:"benzina",
     },
     {
-      marca: RangeRover,
-      modello: evoque,
-      alimentazione: benzina,
+      marca: "RangeRover",
+      modello: "evoque",
+      alimentazione: "benzina",
     },
     {
-        marca: Ferrari,
-        modello: California,
-        alimentazione: Gpl,
+        marca: "Ferrari",
+        modello: "California",
+        alimentazione: "Gpl",
     },
     {
-        marca: Porsche,
-        modello:Carrera,
-        alimentazione: diesel,
+        marca: "Porsche",
+        modello:"Carrera",
+        alimentazione: "diesel",
     },
     {
-        marca:Lancia,
-        modello:Stratos,
-        alimentazione: benzina,
+        marca:"Lancia",
+        modello:"Stratos",
+        alimentazione: "benzina",
     },
 ]
 
 const benz= auto.filter((auto) => {
-    if (auto.alimentazione=benzina){
-        console.log(auto);
+    return auto.alimentazione=="benzina";
+        
     }
-}
-
 )
 
 const td = auto.filter((auto) => {
-    if (auto.alimentazione = diesel) {
-        console.log(auto);
+     return auto.alimentazione == "diesel"; 
+        
     }
-}
+
 
 )
 
 const rest = auto.filter((auto) => {
-    if (auto.alimentazione != benzina && auto.alimentazione != diesel) {
-        console.log(auto);
+    return auto.alimentazione != "benzina" && auto.alimentazione != "diesel"; 
+       
     }
-}
+
 )
 
+console.log(benz);
+console.log(td);
+console.log(rest);
